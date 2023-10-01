@@ -1,0 +1,13 @@
+Linea 1  - Define una función publica route que no devuelve valor.
+Linea 2  - Calcula la ruta de la solicitud HTTP y luego la convierte en una cadena que comienza con “/”.
+Linea 3  - Inicializa la variable booleana $match en falso.
+Linea 4  - Comienza el bucle iterando a través de las rutas definidas en $this->routes.
+Linea 5  - Comprueba si la ruta actual coincide con la expresión regular definida en la ruta. 
+Linea 6  - Si la ruta coincide con la expresión regular comienza otro foreach iterando a través de los métodos.
+Linea 7  - Verifica si el método HTTP de la solicitud coincide con el método definido en la ruta.
+Linea 8  - Cambia el valor del booleano $march a true.
+Linea 9  - Verifica si el método es GET y no POST.
+Linea 10 - Si lo anterior se cumple analiza la entrada de la solicitud y lo convierte en variables $_GET o $_POST según el valor de $method
+Linea 11 - Itera a través de las acciones asociadas a cada ruta y procede a ejecutarlas.
+Linea 12 - Imprime los argumentos de la solicitud HTTP.
+Linea 13 - Imprime el código 404 en caso de no encontrar ninguna ruta coincidente.
